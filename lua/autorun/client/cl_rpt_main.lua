@@ -44,7 +44,7 @@ function rpt_file_create()
     local ply_file_msg = {ply_idA, ply_idB}
 
     if file.Exists("pt32_ui.txt", "data") == false then
-        file.Write("pt32_ui.txt", util.Base64Encode(table.concat(ply_file_msg, " ", 1, 2))) //No, I am not trying to legitimately encrypt it. I know Base64 can be easily broken.
+        file.Write("pt32_ui.txt", util.Base64Encode(table.concat(ply_file_msg, " ", 1, 2))) --No, I am not trying to legitimately encrypt it. I know Base64 can be easily broken.
     end
 end
 
