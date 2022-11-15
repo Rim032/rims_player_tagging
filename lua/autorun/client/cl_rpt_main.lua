@@ -1,11 +1,9 @@
 timer.Simple(24, function()
-    --print("[RPT DEBUG] PLAYER SPAWNED?! 111")
     net.Start("rpt_is_user_fully_auth")
     net.SendToServer(ply)
 end)
 
 net.Receive("rpt_user_fully_auth", function(len, ply)
-    --print("[RPT DEBUG] USER AUTH NET MSG RECEIVED!")
     rpt_file_create()
 end)
 
