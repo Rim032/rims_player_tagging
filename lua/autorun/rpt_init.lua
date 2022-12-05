@@ -12,11 +12,11 @@ rpt.allowed_ranks = {
 
 if SERVER then
     include("rpt/server/sv_rpt_main.lua")
+    AddCSLuaFile("autorun/client/cl_rpt_main.lua")
 end
 
 
 if CLIENT then
-    AddCSLuaFile("autorun/client/cl_rpt_main.lua")
     include("autorun/client/cl_rpt_main.lua")
 end
 
